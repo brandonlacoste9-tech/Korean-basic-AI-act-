@@ -424,6 +424,7 @@ git reset --hard           # Discard all local changes (use carefully!)
 
 #### Sync Fork with Original Repository
 ```bash
+# Replace ORIGINAL-OWNER and REPO with the original repository details
 git remote add upstream https://github.com/ORIGINAL-OWNER/REPO.git
 git fetch upstream
 git checkout main
@@ -448,7 +449,10 @@ If you encounter authentication errors when pushing:
    cat ~/.ssh/id_ed25519.pub  # Copy this key
    ```
    - Add the key to GitHub: Settings > SSH and GPG keys > New SSH key
-   - Change remote URL: `git remote set-url origin git@github.com:USERNAME/REPO.git`
+   - Change remote URL (replace USERNAME and REPO with your details): 
+     ```bash
+     git remote set-url origin git@github.com:USERNAME/REPO.git
+     ```
 
 ### Merge Conflicts
 
