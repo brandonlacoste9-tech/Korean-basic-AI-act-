@@ -8,3 +8,5 @@ The Korea AI Basic Act, passed on December 26, 2024, establishes a comprehensive
 - Pushing code with git commands
 - Setting up automated deployments to Railway and Netlify
 - Implementing safe development practices with branch strategies
+## Purpose and Significance
+The AI Basic Act aims to enhance South Korea's national competitiveness in AI while ensuring ethical standards and public trust. It is significant as it positions South Korea as the second country globally, after the European Union, to adopt a comprehensive AI regulatory framework.
