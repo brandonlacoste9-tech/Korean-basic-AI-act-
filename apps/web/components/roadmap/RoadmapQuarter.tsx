@@ -1,6 +1,6 @@
 import React from 'react';
 import RoadmapItem from './RoadmapItem';
-import { RoadmapItem as RoadmapItemType } from '../../../data/roadmap';
+import { RoadmapItem as RoadmapItemType } from '../../data/roadmap';
 
 interface RoadmapQuarterProps {
   quarter: string;

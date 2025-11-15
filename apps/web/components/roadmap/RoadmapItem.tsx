@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RoadmapItem as RoadmapItemType } from '../../../data/roadmap';
+import { RoadmapItem as RoadmapItemType } from '../../data/roadmap';
 
 interface RoadmapItemProps {
   item: RoadmapItemType;

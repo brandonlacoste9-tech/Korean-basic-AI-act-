@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import DeploymentFeed from './components/DeploymentFeed';
-import RecentPRs from './components/RecentPRs';
-import LiveStatus from './components/LiveStatus';
+import DeploymentFeed from '../../components/trust/DeploymentFeed';
+import RecentPRs from '../../components/trust/RecentPRs';
+import LiveStatus from '../../components/trust/LiveStatus';
 import { sampleRoadmapItems } from '../../data/roadmap';
 
 const TrustCenterPage: React.FC = () => {

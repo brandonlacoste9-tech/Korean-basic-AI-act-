@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import RoadmapQuarter from './components/RoadmapQuarter';
-import RoadmapFilterBar from './components/RoadmapFilterBar';
+import RoadmapQuarter from '../../components/roadmap/RoadmapQuarter';
+import RoadmapFilterBar from '../../components/roadmap/RoadmapFilterBar';
 import roadmap, { sampleRoadmapItems, RoadmapItem } from '../../data/roadmap';
 
 const RoadmapPage: React.FC = () => {
