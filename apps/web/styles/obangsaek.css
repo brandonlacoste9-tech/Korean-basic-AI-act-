@@ -1,0 +1,291 @@
+/**
+ * Obangsaek (오방색) - Traditional Korean Five Colors Palette
+ * 
+ * Based on the five cardinal colors used in Korean culture and philosophy:
+ * - Blue (청색/靑色): East, Wood, Spring - #003478
+ * - Red (적색/赤色): South, Fire, Summer - #CE2029
+ * - Yellow (황색/黃色): Center, Earth - #FFD700
+ * - White (백색/白色): West, Metal, Autumn - #FFFFFF
+ * - Black (흑색/黑色): North, Water, Winter - #000000
+ */
+
+:root {
+  /* Primary Obangsaek Colors */
+  --obangsaek-blue: #003478;
+  --obangsaek-red: #CE2029;
+  --obangsaek-yellow: #FFD700;
+  --obangsaek-white: #FFFFFF;
+  --obangsaek-black: #000000;
+
+  /* Element Associations */
+  --color-wood: var(--obangsaek-blue);
+  --color-fire: var(--obangsaek-red);
+  --color-earth: var(--obangsaek-yellow);
+  --color-metal: var(--obangsaek-white);
+  --color-water: var(--obangsaek-black);
+
+  /* Directional Colors */
+  --color-east: var(--obangsaek-blue);
+  --color-south: var(--obangsaek-red);
+  --color-center: var(--obangsaek-yellow);
+  --color-west: var(--obangsaek-white);
+  --color-north: var(--obangsaek-black);
+
+  /* Semantic Color Mapping for Government UI */
+  --color-primary: var(--obangsaek-blue);
+  --color-danger: var(--obangsaek-red);
+  --color-warning: var(--obangsaek-yellow);
+  --color-success: #22C55E; /* Complementary green */
+  --color-neutral: #6B7280; /* Gray for neutral elements */
+
+  /* Extended Palette - Tints and Shades */
+  --obangsaek-blue-50: #E6EBF5;
+  --obangsaek-blue-100: #CCD7EB;
+  --obangsaek-blue-200: #99AFD7;
+  --obangsaek-blue-300: #6687C3;
+  --obangsaek-blue-400: #335FAF;
+  --obangsaek-blue-500: #003478; /* Base */
+  --obangsaek-blue-600: #002A60;
+  --obangsaek-blue-700: #001F48;
+  --obangsaek-blue-800: #001530;
+  --obangsaek-blue-900: #000A18;
+
+  --obangsaek-red-50: #FCE8EA;
+  --obangsaek-red-100: #F9D1D5;
+  --obangsaek-red-200: #F3A3AB;
+  --obangsaek-red-300: #ED7581;
+  --obangsaek-red-400: #E74757;
+  --obangsaek-red-500: #CE2029; /* Base */
+  --obangsaek-red-600: #A51A21;
+  --obangsaek-red-700: #7C1319;
+  --obangsaek-red-800: #520D11;
+  --obangsaek-red-900: #290608;
+
+  --obangsaek-yellow-50: #FFFBEB;
+  --obangsaek-yellow-100: #FFF7D6;
+  --obangsaek-yellow-200: #FFEFAD;
+  --obangsaek-yellow-300: #FFE784;
+  --obangsaek-yellow-400: #FFDF5B;
+  --obangsaek-yellow-500: #FFD700; /* Base */
+  --obangsaek-yellow-600: #CCAC00;
+  --obangsaek-yellow-700: #998100;
+  --obangsaek-yellow-800: #665600;
+  --obangsaek-yellow-900: #332B00;
+
+  /* Background Colors for Government UI */
+  --bg-primary: var(--obangsaek-white);
+  --bg-secondary: #F9FAFB;
+  --bg-tertiary: #F3F4F6;
+  --bg-accent-blue: var(--obangsaek-blue-50);
+  --bg-accent-red: var(--obangsaek-red-50);
+  --bg-accent-yellow: var(--obangsaek-yellow-50);
+
+  /* Text Colors */
+  --text-primary: var(--obangsaek-black);
+  --text-secondary: #4B5563;
+  --text-tertiary: #9CA3AF;
+  --text-inverse: var(--obangsaek-white);
+  --text-link: var(--obangsaek-blue);
+  --text-danger: var(--obangsaek-red);
+
+  /* Border Colors */
+  --border-light: #E5E7EB;
+  --border-medium: #D1D5DB;
+  --border-dark: #9CA3AF;
+  --border-primary: var(--obangsaek-blue);
+  --border-danger: var(--obangsaek-red);
+
+  /* Shadow Values */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Spacing Scale (based on 8px grid) */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2rem;     /* 32px */
+  --spacing-2xl: 3rem;    /* 48px */
+  --spacing-3xl: 4rem;    /* 64px */
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem;  /* 36px */
+  --font-size-5xl: 3rem;     /* 48px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;  /* 4px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-2xl: 1.5rem;  /* 24px */
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+
+  /* Z-Index Scale */
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* Utility Classes for Obangsaek Colors */
+.bg-obangsaek-blue { background-color: var(--obangsaek-blue); }
+.bg-obangsaek-red { background-color: var(--obangsaek-red); }
+.bg-obangsaek-yellow { background-color: var(--obangsaek-yellow); }
+.bg-obangsaek-white { background-color: var(--obangsaek-white); }
+.bg-obangsaek-black { background-color: var(--obangsaek-black); }
+
+.text-obangsaek-blue { color: var(--obangsaek-blue); }
+.text-obangsaek-red { color: var(--obangsaek-red); }
+.text-obangsaek-yellow { color: var(--obangsaek-yellow); }
+.text-obangsaek-white { color: var(--obangsaek-white); }
+.text-obangsaek-black { color: var(--obangsaek-black); }
+
+.border-obangsaek-blue { border-color: var(--obangsaek-blue); }
+.border-obangsaek-red { border-color: var(--obangsaek-red); }
+.border-obangsaek-yellow { border-color: var(--obangsaek-yellow); }
+.border-obangsaek-white { border-color: var(--obangsaek-white); }
+.border-obangsaek-black { border-color: var(--obangsaek-black); }
+
+/* Korean Government UI Patterns */
+.gov-header {
+  background: linear-gradient(135deg, var(--obangsaek-blue) 0%, var(--obangsaek-blue-700) 100%);
+  color: var(--text-inverse);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.gov-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base);
+}
+
+.gov-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.gov-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.gov-badge-blue {
+  background-color: var(--bg-accent-blue);
+  color: var(--obangsaek-blue);
+}
+
+.gov-badge-red {
+  background-color: var(--bg-accent-red);
+  color: var(--obangsaek-red);
+}
+
+.gov-badge-yellow {
+  background-color: var(--bg-accent-yellow);
+  color: var(--obangsaek-yellow-800);
+}
+
+/* Accent Bars (Traditional Korean Design Element) */
+.accent-bar-top {
+  border-top: 4px solid;
+  border-image: linear-gradient(
+    to right,
+    var(--obangsaek-blue),
+    var(--obangsaek-red),
+    var(--obangsaek-yellow)
+  ) 1;
+}
+
+.accent-bar-left {
+  border-left: 4px solid;
+  border-image: linear-gradient(
+    to bottom,
+    var(--obangsaek-blue),
+    var(--obangsaek-red),
+    var(--obangsaek-yellow)
+  ) 1;
+}
+
+/* Status Indicators */
+.status-planned {
+  color: var(--text-secondary);
+  background-color: var(--bg-tertiary);
+}
+
+.status-in-progress {
+  color: var(--obangsaek-blue);
+  background-color: var(--bg-accent-blue);
+}
+
+.status-completed {
+  color: #22C55E;
+  background-color: #DCFCE7;
+}
+
+.status-blocked {
+  color: var(--obangsaek-red);
+  background-color: var(--bg-accent-red);
+}
+
+.status-deferred {
+  color: var(--text-tertiary);
+  background-color: var(--bg-secondary);
+}
+
+/* Korean Typography Support */
+.korean-text {
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+  line-height: var(--line-height-relaxed);
+}
+
+.english-text {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Responsive Korean Typography */
+@media (max-width: 768px) {
+  .korean-text {
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+}
