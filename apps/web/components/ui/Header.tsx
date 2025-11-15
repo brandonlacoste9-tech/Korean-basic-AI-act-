@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-
 export interface HeaderProps {
   language?: 'ko' | 'en';
   onLanguageChange?: (lang: 'ko' | 'en') => void;
